@@ -1,0 +1,95 @@
+*{margin:0; padding:0;}
+body{
+  background:#ebebeb;
+}
+/* este .calendario é para modifiacar todo o designer*/
+.calendario{
+  margin:40px;
+  width:350px;
+  background:white;
+  /*padding:5px;
+  esta sendo tirado esse padding por que não estava ficando certo na margem do
+  calendario, então não será nescesario deixar ele por que já tem no .calendario td*/
+  font-size:14px;
+  text-align: center;
+  position: relative;
+}
+.calendario table{width: 100%;}
+
+/* esse calendario .mes é de todos os tr body que foi criado*/
+.calendario .mes{
+  display:none;
+}
+/*esse esta junto com o outro .calendario só esta separado para ficar melhor 
+para identificar a fonte, para fazer unica manipulação*/
+.calendario td{
+  padding:6px;
+  color: #666;
+}
+.calendario td.eventos{
+  background: #069;
+}
+.calendario td.atual{
+  background: #EC2F00;
+  color: white;
+}
+.calendario td a{
+  color:#fff;
+  text-decoration:none;
+  display:block;
+}
+.calendario .mes_title{
+  font-size: 15px;
+}
+/*para mudar só o nome do title do calendario por ex: agosto e setembro*/
+.calendario .mes_title td{
+  background:#069;
+  padding:5px;
+  padding-bottom:6px;
+  color:white;
+}
+ /*mudar so o racko = vai e volta*/
+.calendario #volta, .calendario #vai{
+  padding:0 10px;
+  font-size:16px;
+  text-decoration:none;
+  background:linear-gradient(to bottom, #fff, #ccc 130%);
+  line-height:28px;
+  margin:3px;
+  position:absolute;
+  color:#333;
+}
+.calendario #volta:hover, .calendario #vai:hover{
+  background:linear-gradient(to bottom, #ccc, #fff 130%);
+}
+.calendario #volta{
+  left:-1px;
+  top:-1px;
+}
+.calendario #vai{
+  right:-1px;
+  top:-1px;
+}
+.blue, .red{
+  float:left;
+  width:15px;
+  height:15px;
+  margin-right:5px;
+}
+.blue{
+  background:#069;
+}
+.red{
+  background:#EC2F00;
+}
+.calendario .legends{
+  float:left;
+  width:100%;
+  margin-top:10px;
+  text-align:left;
+}
+
+.calendario .legends .legenda{
+  float:left;
+  width:30%;
+}
